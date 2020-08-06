@@ -1,0 +1,11 @@
+<?php
+$data=date("Y-m-d");
+$czas=date("H:i:s");
+// [zadanie]
+function zadanie_func ($atts) 
+{
+echo " $data , $czas ";
+}
+add_shortcode ('zadanie', 'zadanie_func');
+
+str_replace (  '[dzisaj]' ,  'zadanie_func' ,  $content  );
