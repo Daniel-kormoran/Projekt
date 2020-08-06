@@ -11,8 +11,7 @@
 function powitanie_shortcode() 
 {
 	 
-if ($content == "dzisaj") ; {
-	$content=str_replace (  'dzisaj' ,  '$powitanie' ,  $content  );}
+$powitanie="Dzień Dobry";
 	return "$powitanie";
 
 
