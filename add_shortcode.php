@@ -9,6 +9,7 @@
 
 <?php
 // Add Shortcode
+add_shortcode( 'my_first_shorcode', 'my_shortcode' );
 function my_shortcode() {
 
 	$data=date("Y-m-d");
@@ -19,4 +20,4 @@ function my_shortcode() {
 
 }
 
-add_shortcode( 'my_first_shorcode', 'my_shortcode' );
+
