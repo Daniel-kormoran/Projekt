@@ -8,22 +8,15 @@
 * Author URI: wordpress.cormo/
 
 <?php
- // Add Shortcode
-function my_shortcode( $atts ) {
+// Add Shortcode
+function my_shortcode() {
 
-	// Attributes
-	$atts = shortcode_atts(
-		array(
-			'$data' => 'date(\"Y-m-d\")',
-			'$czas' => 'date(\"H:i:s\")',
-		),
-		$atts,
-		'myshortcode'
-	);
+	$data=date("Y-m-d");
+	$czas=date("H:i:s");
+	$dataiczas=  " $data .'.' $czas";
+	$content=str_replace (  '[dzisaj]' ,  'my_shortcode' ,  $content  );
+		return "$content";
 
-	str_replace (  '[dzisaj]' ,  'my_shortcode' ,  $content  );
-	return "mamy $data , o $czas";
-
-
-add_shortcode( 'myshortcode', 'my_shortcode' ) ;
 }
+
+add_shortcode( 'my_first_shorcode', 'my_shortcode' );
