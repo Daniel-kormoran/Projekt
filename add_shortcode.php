@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: WP First Plugin
+* Plugin Name: Wtyczka apropo daty
 * Plugin URI: wordpress.cormo/
 * Description: Pierwszy plugin WordPress.
 * Version: 1.0
