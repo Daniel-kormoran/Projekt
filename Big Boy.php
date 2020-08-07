@@ -46,7 +46,17 @@ function new_5_shortcode()
 {
  $args = array(
 	'numberposts'	=> 10,
-	 'category'   => 'bez kategrii'
+	 'category'         => 1,
+        'author'           => 1,
+	's'                =>'test',
+        'orderby'          => 'title',
+        'order'            => 'DESC',
+        'include'          =>  array(),
+        'exclude'          =>  array(),
+        'post_type'        => 'post',
+        'suppress_filters' => true,
+		
+	 
 	
 );
 $last_posts = get_posts( $args );
