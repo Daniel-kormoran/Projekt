@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: jesteśczycieniema
+* Plugin Name: jestes_czy_nie
 
 * Plugin URI: wordpress.cormo/
 * Description: Pierwszy plugin WordPress.
@@ -9,7 +9,7 @@
 * Author URI: wordpress.cormo/
 **/
 
-function aktoto_shortcode() 
+function jestes_czy_nie_shortcode() 
 {
  {
     $current_user = wp_get_current_user();
@@ -22,7 +22,7 @@ function aktoto_shortcode()
 	
 
 }
-add_shortcode( 'aktoto', 'aktoto_shortcode' );
+add_shortcode( 'jestes', 'jestes_czy_nie_shortcode' );
 
 
 
