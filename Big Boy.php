@@ -55,7 +55,7 @@ function new_5_shortcode()
         'exclude'          =>  array(),
         'post_type'        => 'post',
         'suppress_filters' => true,
-		
+	'post_status'	   =>'published',		
 	 
 	
 );
