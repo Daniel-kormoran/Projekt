@@ -46,7 +46,7 @@ function new_5_shortcode()
 {
  $args = array(
 	'numberposts'	=> 10,
-	 'category'   => 1
+	 'category'   => 'bez kategrii'
 	
 );
 $last_posts = get_posts( $args );
