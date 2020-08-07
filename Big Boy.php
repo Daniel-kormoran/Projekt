@@ -45,7 +45,8 @@ add_shortcode( 'who', 'who_shortcode' );
 function new_5_shortcode() 
 {
  $args = array(
-	'numberposts'	=> 5
+	'numberposts'	=> 10,
+	 'category'   => 1
 	
 );
 $last_posts = get_posts( $args );
