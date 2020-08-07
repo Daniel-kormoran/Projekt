@@ -13,7 +13,7 @@ function aktoto_shortcode()
 {
  $current_user = wp_get_current_user();
 if ( 0 == $current_user->ID ) {
-        echo " Nie zalogowany .";
+        echo " Nieznajomy .";
     } else {
         
     printf( __( 'Username: %s', 'textdomain' ), esc_html( $current_user->user_login ) ) . '<br />';
